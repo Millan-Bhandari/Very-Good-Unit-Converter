@@ -48,9 +48,14 @@ struct ContentView: View {
                             .foregroundColor(.blue)
                     }
                     Section {
-                        NavigationLink("Centimeters to Inches", destination: CentimetersToInches(phrase: "CentimetersToInches"))
+                        NavigationLink("Centimeters to Inches", destination: CentimetersToInches(phrase: "Centimeters To Inches"))
                             .padding()
                             .foregroundColor(.red)
+                    }
+                    Section {
+                        NavigationLink("British words to American", destination: BritishWordsToAmerican(phrase: "British words to American"))
+                            .padding()
+                            .foregroundColor(.gray)
                     }
                 }
             }
