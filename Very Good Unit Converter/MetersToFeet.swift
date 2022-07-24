@@ -30,7 +30,7 @@ struct MetersToFeet: View {
                 }
             }
             .padding()
-            Text("\(howManyMeters) meters is \(Answer) feet")
+            Text("\(howManyMeters) meters is \(Answer, specifier: "%.2f") feet")
                 .fontWeight(.bold)
             Spacer()
         }

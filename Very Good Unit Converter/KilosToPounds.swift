@@ -1,22 +1,21 @@
 //
-//  KilometersToMiles.swift
+//  KilosToPounds.swift
 //  Very Good Unit Converter
 //
-//  Created by Millan Bhandari on 7/23/22.
+//  Created by Millan Bhandari on 7/24/22.
 //
 
 import SwiftUI
 
-struct KilometersToMiles: View {
-    var phrase : String
-    @State private var howManyKilometers = ""
+struct KilosToPounds: View {
+    @State private var howManyKilos = ""
     @State private var Answer = 0.0
+    var phrase : String
     var body: some View {
         Text(phrase)
             .font(.title)
             .fontWeight(.bold)
-            .padding()
-        TextField("Enter Kilometers#", text: $howManyKilometers)
+        TextField("Enter Kilograms#", text: $howManyKilos)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .multilineTextAlignment(.center)
             .frame(width: 200, height: 30, alignment: .center)
@@ -24,19 +23,18 @@ struct KilometersToMiles: View {
             .padding()
             .keyboardType(.numberPad)
         Button("Calculate") {
-            if let kilometerNo = Int(howManyKilometers) {
-                Answer = Double(kilometerNo) * 0.62137
+            if let kilosNo = Double(howManyKilos) {
+                Answer = Double(kilosNo) * 2.205
             }
         }
-        .padding()
-        Text("\(howManyKilometers) kilometers is \(Answer, specifier: "%.2f") miles.")
+        Text("\(howManyKilos) kilograms is \(Answer, specifier: "%.2f") lbs.")
             .fontWeight(.bold)
         Spacer()
     }
 }
 
-struct KilometersToMiles_Previews: PreviewProvider {
+struct KilosToPounds_Previews: PreviewProvider {
     static var previews: some View {
-        KilometersToMiles(phrase: "hi")
+        KilosToPounds(phrase: "howdy")
     }
 }
