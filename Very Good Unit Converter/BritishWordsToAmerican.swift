@@ -40,9 +40,22 @@ struct BritishWordsToAmerican: View {
                 Text("Plastered").tag("Plastered")
                 Text("Give you a bell").tag("Give you a bell")
             }
+            Group {
+                Text("Ace").tag("Ace")
+                Text("Blinding").tag("Blinding")
+                Text("Brill").tag("Brill")
+                Text("Buzzing").tag("Buzzing")
+                Text("Chuffed").tag("Chuffed")
+                Text("Hunky-dory").tag("Hunky-Dory")
+                Text("Tickled pink").tag("Tickled pink")
+                Text("Smashing").tag("Smashing")
+                Text("Git").tag("Git")
+                Text("Muppet").tag("Muppet")
+            }
         }
         .pickerStyle(WheelPickerStyle())
         .padding()
+        Spacer()
         
         
         Button("Convert") {
@@ -105,6 +118,36 @@ struct BritishWordsToAmerican: View {
             }
             if BritishWord == "Give you a bell" {
                 AmericanWord = "'Give you a call'"
+            }
+            if BritishWord == "Ace" {
+                AmericanWord = "'Amazing, Excellent'"
+            }
+            if BritishWord == "Blinding" {
+                AmericanWord = "'Superb'"
+            }
+            if BritishWord == "Brill" {
+                AmericanWord = "'Short for brilliant'"
+            }
+            if BritishWord == "Buzzing" {
+                AmericanWord = "'Exciting'"
+            }
+            if BritishWord == "Chuffed" {
+                AmericanWord = "'Pleased'"
+            }
+            if BritishWord == "Hunky-Dory" {
+                AmericanWord = "'Everything is good'"
+            }
+            if BritishWord == "Tickled Pink" {
+                AmericanWord = "'To be very happy about something'"
+            }
+            if BritishWord == "Smashing" {
+                AmericanWord = "'Wonderful'"
+            }
+            if BritishWord == "Git" {
+                AmericanWord = "'to be incompetent and annoying'"
+            }
+            if BritishWord == "Muppet" {
+                AmericanWord = "'Stupid and childish'"
             }
         }
         .padding()
