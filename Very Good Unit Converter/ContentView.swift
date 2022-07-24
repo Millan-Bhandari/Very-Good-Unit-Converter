@@ -47,6 +47,11 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.blue)
                     }
+                    Section {
+                        NavigationLink("Centimeters to Inches", destination: CentimetersToInches(phrase: "CentimetersToInches"))
+                            .padding()
+                            .foregroundColor(.red)
+                    }
                 }
             }
             

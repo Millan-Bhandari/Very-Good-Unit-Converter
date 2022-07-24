@@ -18,6 +18,8 @@
 		6A40D085288DC11C006B369D /* KilosToPounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40D084288DC11C006B369D /* KilosToPounds.swift */; };
 		6A40D087288DCC9A006B369D /* LitresToGallons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40D086288DCC9A006B369D /* LitresToGallons.swift */; };
 		6A40D089288DCEBB006B369D /* gramsToOunces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40D088288DCEBB006B369D /* gramsToOunces.swift */; };
+		6A40D08B288DD56F006B369D /* CentimetersToInches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40D08A288DD56F006B369D /* CentimetersToInches.swift */; };
+		6A40D08D288DD73E006B369D /* BritWordsToEnglish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A40D08C288DD73E006B369D /* BritWordsToEnglish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		6A40D084288DC11C006B369D /* KilosToPounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilosToPounds.swift; sourceTree = "<group>"; };
 		6A40D086288DCC9A006B369D /* LitresToGallons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitresToGallons.swift; sourceTree = "<group>"; };
 		6A40D088288DCEBB006B369D /* gramsToOunces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gramsToOunces.swift; sourceTree = "<group>"; };
+		6A40D08A288DD56F006B369D /* CentimetersToInches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentimetersToInches.swift; sourceTree = "<group>"; };
+		6A40D08C288DD73E006B369D /* BritWordsToEnglish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BritWordsToEnglish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				6A40D086288DCC9A006B369D /* LitresToGallons.swift */,
 				6A40D080288CF48F006B369D /* KilometersToMiles.swift */,
 				6A40D088288DCEBB006B369D /* gramsToOunces.swift */,
+				6A40D08A288DD56F006B369D /* CentimetersToInches.swift */,
+				6A40D08C288DD73E006B369D /* BritWordsToEnglish.swift */,
 				6A40D07B288C412F006B369D /* components */,
 				6A40D06F288B2E26006B369D /* Assets.xcassets */,
 				6A40D071288B2E26006B369D /* Preview Content */,
@@ -166,12 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A40D08B288DD56F006B369D /* CentimetersToInches.swift in Sources */,
 				6A40D081288CF48F006B369D /* KilometersToMiles.swift in Sources */,
 				6A40D06E288B2E25006B369D /* ContentView.swift in Sources */,
 				6A40D06C288B2E25006B369D /* Very_Good_Unit_ConverterApp.swift in Sources */,
 				6A40D07D288C414D006B369D /* SwiftUIView.swift in Sources */,
 				6A40D083288CF7A3006B369D /* CelsiusToFarenheit.swift in Sources */,
 				6A40D07A288B34A9006B369D /* MetersToFeet.swift in Sources */,
+				6A40D08D288DD73E006B369D /* BritWordsToEnglish.swift in Sources */,
 				6A40D087288DCC9A006B369D /* LitresToGallons.swift in Sources */,
 				6A40D085288DC11C006B369D /* KilosToPounds.swift in Sources */,
 				6A40D089288DCEBB006B369D /* gramsToOunces.swift in Sources */,
