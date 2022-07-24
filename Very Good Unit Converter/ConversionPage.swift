@@ -8,18 +8,36 @@
 import SwiftUI
 
 struct ConversionPage: View {
-    @State private var answer = 0
-    let units : Data
+    let phrase : String
+    @State private var howManyMeters = ""
+    @State private var Answer = 0.0
+    
     var body: some View {
-        Text("Conversion")
-            .font(.title)
-            .fontWeight(.heavy)
-        Text("\(units.finalAnswer)")
+        VStack {
+            Text(phrase)
+                .font(.title)
+                .fontWeight(.bold)
+            TextField("Enter Meters#", text: $howManyMeters)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .multilineTextAlignment(.center)
+                .frame(width: 200, height: 30, alignment: .center)
+                .font(.body)
+                .padding()
+                .keyboardType(.numberPad)
+            Button("Calculate") {
+                if let metersNo = Int(howManyMeters) {
+                    Answer = Double(metersNo) * 3.281
+                }
+            }
+            .padding()
+            Text("\(howManyMeters) meters is \(Answer) feet")
+                .fontWeight(.bold)
+        }
     }
 }
 struct ConversionPage_Previews: PreviewProvider {
     static var previews: some View {
-        ConversionPage(units: Data())
+        ConversionPage(phrase: "howdy")
     }
 }
 
