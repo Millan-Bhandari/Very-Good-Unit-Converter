@@ -52,10 +52,21 @@ struct BritishWordsToAmerican: View {
                 Text("Git").tag("Git")
                 Text("Muppet").tag("Muppet")
             }
+            Group {
+                Text("Lift").tag("Lift")
+                Text("Flat").tag("Flat")
+                Text("Loo").tag("Loo")
+                Text("Bill").tag("Bill")
+                Text("Naff").tag("Naff")
+                Text("Boot").tag("Boot")
+                Text("Holiday").tag("Holiday")
+                Text("Biscuit").tag("Biscuit")
+                Text("Trousers").tag("Trousers")
+                Text("Full of Beans").tag("Full of beans")
+            }
         }
         .pickerStyle(WheelPickerStyle())
         .padding()
-        Spacer()
         
         
         Button("Convert") {
@@ -137,7 +148,7 @@ struct BritishWordsToAmerican: View {
             if BritishWord == "Hunky-Dory" {
                 AmericanWord = "'Everything is good'"
             }
-            if BritishWord == "Tickled Pink" {
+            if BritishWord == "Tickled pink" {
                 AmericanWord = "'To be very happy about something'"
             }
             if BritishWord == "Smashing" {
@@ -149,10 +160,38 @@ struct BritishWordsToAmerican: View {
             if BritishWord == "Muppet" {
                 AmericanWord = "'Stupid and childish'"
             }
+            if BritishWord == "Lift" {
+                AmericanWord = "'Elevator'"
+            }
+            if BritishWord == "Flat" {
+                AmericanWord = "'Apartment'"
+            }
+            if BritishWord == "Loo" {
+                AmericanWord = "'Bathroom'"
+            }
+            if BritishWord == "Naff" {
+                AmericanWord = "'Banter'"
+            }
+            if BritishWord == "Boot" {
+                AmericanWord = "'Trunk'"
+            }
+            if BritishWord == "Holiday" {
+                AmericanWord = "'Vacation'"
+            }
+            if BritishWord == "Biscuit" {
+                AmericanWord = "'Cookie'"
+            }
+            if BritishWord == "Trousers" {
+                AmericanWord = "'Pants'"
+            }
+            if BritishWord == "Full of beans" {
+                AmericanWord = "'to be filled with energy'"
+            }
         }
         .padding()
         Text("\(BritishWord) means \(AmericanWord) in America")
             .fontWeight(.bold)
+        Spacer()
     }
 }
 

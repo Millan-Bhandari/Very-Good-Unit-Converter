@@ -20,6 +20,7 @@ struct CentimetersToInches: View {
             .multilineTextAlignment(.center)
             .frame(width: 200, height: 30, alignment: .center)
             .font(.body)
+            .keyboardType(.numberPad)
             .padding()
         Button("Calculate") {
             if let CentimetersNo = Int(CentimetersAmount) {

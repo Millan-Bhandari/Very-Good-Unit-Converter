@@ -20,7 +20,9 @@ struct gramsToOunces: View {
             .multilineTextAlignment(.center)
             .frame(width: 200, height: 30, alignment: .center)
             .font(.body)
+            .keyboardType(.numberPad)
             .padding()
+            
         Button("Calculate") {
             if let gramsNo = Int(amountofGrams) {
                 Answer = Double(gramsNo) / 28.35

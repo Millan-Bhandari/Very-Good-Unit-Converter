@@ -57,6 +57,11 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.gray)
                     }
+                    Section {
+                        NavigationLink("Hectare To Acre", destination: HectareToAcre(phrase: "Hectare to Acres"))
+                            .padding()
+                            .foregroundColor(.blue)
+                    }
                 }
             }
             
