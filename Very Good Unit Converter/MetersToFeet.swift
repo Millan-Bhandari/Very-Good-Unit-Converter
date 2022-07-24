@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConversionPage: View {
+struct MetersToFeet: View {
     let phrase : String
     @State private var howManyMeters = ""
     @State private var Answer = 0.0
@@ -32,12 +32,13 @@ struct ConversionPage: View {
             .padding()
             Text("\(howManyMeters) meters is \(Answer) feet")
                 .fontWeight(.bold)
+            Spacer()
         }
     }
 }
-struct ConversionPage_Previews: PreviewProvider {
+struct MetersToFeet_Previews: PreviewProvider {
     static var previews: some View {
-        ConversionPage(phrase: "howdy")
+        MetersToFeet(phrase: "howdy")
     }
 }
 
